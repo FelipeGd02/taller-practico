@@ -36,4 +36,14 @@ export class OrdersController {
   findRecentPending() {
     return this.ordersService.findRecentPending();
   }
+
+  @Get('pending-queue')
+  findPendingQueue() {
+    return this.ordersService.findPendingQueue();
+  }
+
+  @Get(':id/priority')
+  getPriority(@Param('id') id: string) {
+    return this.ordersService.getPriority(Number(id));
+  }
 }
