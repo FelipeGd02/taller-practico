@@ -1,0 +1,7 @@
+1. porque no necesita ir a la base de datos buscar info solo revisa y analiza lo se le entrego
+2. el order service tiene como responsabilidad "controlar" el flujo o mejro dicho coordinarlo, el busca el pedido si este existe o no y luego se lo pasa al order priority para que este lo calsifique.
+3. el total pedning es el numero real de los pedidos pendientes el showing lo que hace mostarra los pedidos que vienen en el arreglo de orders.
+4. Porque el order solo necesiat crear un objeto nuevo no necesita ir a buscarlo.
+5. El controller pasaria a tener muchas tareas o responsabilidades lo que haria mas dificil de leer el controller y probarlo y tambien reutilizar las reglas de prioridad en otros lados.
+
+Declaración de IA: La herrmienta de IA que utilice fue claude, le pedi que me diera un paso a paso de como solucionar el taller, lo que me entrego fue la estructura de las carpetas y me dijo que tendria que crear dos archivos y cambiar el module y el service, la ia me preguntaba como tenia que ser el codigo o que estructura deberia de seguir para armar los archivos, yo le respondia en mis palabras y tambien le pega partes de codigo del repo del profe para ver si estaba bien y la ia me ayudaba a construirlo, y tambien la utilice para el analisis de las preguntas y esta me ponia la pregunta en un modelo mental o contexto diferente.

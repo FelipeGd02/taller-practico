@@ -40,6 +40,12 @@ let OrdersController = class OrdersController {
     findRecentPending() {
         return this.ordersService.findRecentPending();
     }
+    findPendingQueue() {
+        return this.ordersService.findPendingQueue();
+    }
+    getPriority(id) {
+        return this.ordersService.getPriority(Number(id));
+    }
 };
 exports.OrdersController = OrdersController;
 __decorate([
@@ -83,6 +89,19 @@ __decorate([
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", void 0)
 ], OrdersController.prototype, "findRecentPending", null);
+__decorate([
+    (0, common_1.Get)('pending-queue'),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", void 0)
+], OrdersController.prototype, "findPendingQueue", null);
+__decorate([
+    (0, common_1.Get)(':id/priority'),
+    __param(0, (0, common_1.Param)('id')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String]),
+    __metadata("design:returntype", void 0)
+], OrdersController.prototype, "getPriority", null);
 exports.OrdersController = OrdersController = __decorate([
     (0, common_1.Controller)('orders'),
     __metadata("design:paramtypes", [orders_service_1.OrdersService])
